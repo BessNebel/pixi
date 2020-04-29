@@ -1,0 +1,28 @@
+{
+  "name": "pixi",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "main": "./bin/js/app.js",
+  "scripts": {
+    "build": "webpack",
+    "server": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "pixi.js": "4.7.2",
+    "@types/node": "^9.6.0",
+    "@types/pixi.js": "^4.7.2",
+    "file-loader": "1.1.11",
+    "typescript": "2.7.2",
+    "awesome-typescript-loader": "5.0.0-1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "2.0.13",
+    "webpack-dev-server": "^3.10.3",
+    "clean-webpack-plugin": "0.1.19",
+    "html-webpack-plugin": "3.1.0",
+    "copy-webpack-plugin": "4.5.1",
+    "tsconfig-paths-webpack-plugin": "3.0.2"
+  }
+}

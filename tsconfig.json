@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./bin/js",
+    "lib": ["es2017", "dom"],
+    "removeComments": true,
+    "strict": true
+  }
+}
