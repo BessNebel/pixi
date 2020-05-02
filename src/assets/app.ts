@@ -2,8 +2,6 @@ import * as PIXI from 'pixi.js';
 import * as Images from './Images';
 import PopupMessage from './PopupMessage';
 
-import UILabel from './UI/UILabel';
-
 const pixi = new PIXI.Application({ width: 760, height: 540, transparent: false });
 pixi.renderer.backgroundColor = 0xCCCCCC;
 document.body.appendChild(pixi.view);
