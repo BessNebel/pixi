@@ -2,8 +2,8 @@ import UISprite from './UISprite';
 
 export default class UIButton extends UISprite {
 
-  constructor(parent: PIXI.Container, background: string, x = 0, y = 0) {
-    super(parent, background, x, y);
+  constructor(background: string = "", x = 0, y = 0) {
+    super(background, x, y);
 
     this.buttonMode = true;
     this.interactive = true;
