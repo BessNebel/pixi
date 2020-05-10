@@ -1,8 +1,9 @@
 import * as PIXI from 'pixi.js';
 import * as Images from './Images';
 import PopupMessage from './PopupMessage';
+import PopupNotification from './PopupNotification';
 
-const pixi = new PIXI.Application({ width: 760, height: 540, transparent: false });
+const pixi = new PIXI.Application({ width: 1250, height: 540, transparent: false });
 pixi.renderer.backgroundColor = 0xCCCCCC;
 document.body.appendChild(pixi.view);
 
@@ -12,8 +13,11 @@ PIXI
   .load(setup);
 
 function setup() {
-  let ts = new PopupMessage(80, 80);
-  pixi.stage.addChild(ts);
+  let popupMessage = new PopupMessage(50, 50);
+  pixi.stage.addChild(popupMessage);
+  popupMessage.ImageBackground.ImageBackgroundMessage.TextTest.text = ":)";
 
-  ts.ImageBackground.ImageBackgroundMessage.TextTest.text = ":)";
+  let popupNotifiaction = new PopupNotification(650, 150);
+  pixi.stage.addChild(popupNotifiaction);
+  popupNotifiaction.TextNotification.text = "Notification";
 };
