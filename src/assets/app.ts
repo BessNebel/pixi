@@ -1,9 +1,8 @@
 import * as PIXI from 'pixi.js';
 import * as Images from './Images';
-import PopupMessage from './PopupMessage';
-import PopupNotification from './PopupNotification';
+import PopupTest from './PopupTest';
 
-const pixi = new PIXI.Application({ width: 1250, height: 540, transparent: false });
+const pixi = new PIXI.Application({ width: 1250, height: 1000, transparent: false });
 pixi.renderer.backgroundColor = 0xCCCCCC;
 document.body.appendChild(pixi.view);
 
@@ -13,11 +12,9 @@ PIXI
   .load(setup);
 
 function setup() {
-  let popupMessage = new PopupMessage(50, 50);
-  pixi.stage.addChild(popupMessage);
-  popupMessage.ImageBackground.ImageBackgroundMessage.TextTest.text = ":)";
+  let popupTest = new PopupTest();
+  pixi.stage.addChild(popupTest);
 
-  let popupNotifiaction = new PopupNotification(650, 150);
-  pixi.stage.addChild(popupNotifiaction);
-  popupNotifiaction.TextNotification.text = "Notification";
+  popupTest.one.panel.buttons.accept.TextLabel.text = "accept";
+  popupTest.two.panel.buttons.reject.TextLabel.text = "reject";
 };
